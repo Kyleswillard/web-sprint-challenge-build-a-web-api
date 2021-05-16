@@ -12,3 +12,13 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Pull your server into this file and start it!
 */
+const server = require('./api/server')
+const pRouter = require('./api/projects/projects-router')
+const aRouter = require('./api/actions/actions-router')
+
+server.use('/api/projects', pRouter)
+server.use('/api/actions', aRouter)
+
+server.listen(5000, () => {
+    console.log('Server Live on 5000!')
+})
