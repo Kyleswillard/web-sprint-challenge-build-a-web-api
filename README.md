@@ -50,39 +50,39 @@ Inside `api/projects/projects-router.js` build the following endpoints:
 -   [x] `[GET] /api/projects`
     -   Returns an array of projects as the body of the response.
     -   If there are no projects it responds with an empty array.
--   [ ] `[GET] /api/projects/:id`
+-   [x] `[GET] /api/projects/:id`
     -   Returns a project with the given `id` as the body of the response.
     -   If there is no project with the given `id` it responds with a status code 404.
--   [ ] `[POST] /api/projects`
+-   [x] `[POST] /api/projects`
     -   Returns the newly created project as the body of the response.
     -   If the request body is missing any of the required fields it responds with a status code 400.
--   [ ] `[PUT] /api/projects/:id`
+-   [x] `[PUT] /api/projects/:id`
     -   Returns the updated project as the body of the response.
     -   If there is no project with the given `id` it responds with a status code 404.
     -   If the request body is missing any of the required fields it responds with a status code 400.
--   [ ] `[DELETE] /api/projects/:id`
+-   [x] `[DELETE] /api/projects/:id`
     -   Returns no response body.
     -   If there is no project with the given `id` it responds with a status code 404.
--   [ ] `[GET] /api/projects/:id/actions`
+-   [x] `[GET] /api/projects/:id/actions`
     -   Returns an array of actions (could be empty) belonging to a project with the given `id`.
     -   If there is no project with the given `id` it responds with a status code 404.
 
 Inside `api/actions/actions-router.js` build endpoints for performing CRUD operations on _actions_:
 
--   [ ] `[GET] /api/actions`
+-   [x] `[GET] /api/actions`
     -   Returns an array of actions (or an empty array) as the body of the response.
--   [ ] `[GET] /api/actions/:id`
+-   [x] `[GET] /api/actions/:id`
     -   Returns an action with the given `id` as the body of the response.
     -   If there is no action with the given `id` it responds with a status code 404.
--   [ ] `[POST] /api/actions`
+-   [x] `[POST] /api/actions`
     -   Returns the newly created action as the body of the response.
     -   If the request body is missing any of the required fields it responds with a status code 400.
     -   When adding an action make sure the `project_id` provided belongs to an existing `project`.
--   [ ] `[PUT] /api/actions/:id`
+-   [x] `[PUT] /api/actions/:id`
     -   Returns the updated action as the body of the response.
     -   If there is no action with the given `id` it responds with a status code 404.
     -   If the request body is missing any of the required fields it responds with a status code 400.
--   [ ] `[DELETE] /api/actions/:id`
+-   [x] `[DELETE] /api/actions/:id`
     -   Returns no response body.
     -   If there is no action with the given `id` it responds with a status code 404.
 
@@ -159,7 +159,12 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+   A: The core features of node are pretty simple. It allows you to use JavaScript in a server environment either for front end development, or as a web server. It also allows for file creation.
 1. Understand and explain the use of Middleware.
+   A: Middleware is a function, or set of function that runs in a chain between different server actions.
 1. The basic principles of the REST architectural style.
+   A: REST(ful) style is server-client, stateless, cache, layered, code on demand.
 1. Understand and explain the use of Express Routers.
+   A: Routers allow you to assign a "URL" to a specific action, or set of actions by the server by providing the correct input.
 1. Describe tooling used to manually test the correctness of an API.
+   A: Manually testing APIs is the use of a Browser, Postman/Insomnia. You input the correct info and incorrect info to do so.
